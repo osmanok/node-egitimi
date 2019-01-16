@@ -1,0 +1,21 @@
+html
+    head
+        title merhaba pug
+
+    body
+        =surname
+        br
+        span(style="color: white; background-color: black;")
+            | merhaba #{name} #{surname}
+
+        - var okul = 'ktun'
+        - var sehir = 'konya'
+        br
+        | deneme #{sehir} #{okul}
+        br
+        include footer.pug
+
+        hr
+        - var sayi = 12
+        if sayi === 12
+            | sayi 12dir
